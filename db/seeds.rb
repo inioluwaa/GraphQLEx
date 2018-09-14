@@ -15,7 +15,7 @@ OFFSET = PROJECT_TITLES.length * SPLIT
 PROJECT_USERS = {
   'leo@example.com' => PROJECT_TITLES[0, OFFSET],
   'bob@example.com' => PROJECT_TITLES[OFFSET..-1]
-}
+}.freeze
 
 PROJECT_USERS.each do |email, projects|
   user = User.new(email: email, password: 'secret')
