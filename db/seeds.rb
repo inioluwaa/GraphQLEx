@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+PROJECT_TITLES = 10.times.map { Faker::Internet.domain_word }
+
+# PROJECT_TITLES = Array.new(10) { Faker::Internet.domain_word }
